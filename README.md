@@ -8,3 +8,8 @@ npx create-react-app appname
 cd appname
 npm start
 ```
+### Import React Router
+```
+npm i react-router-dom
+```
+
