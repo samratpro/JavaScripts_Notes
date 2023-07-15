@@ -5,6 +5,6 @@ npx create-react-app appname
 ```
 ### Start React app
 ```
-cd app
+cd appname
 npm start
 ```
