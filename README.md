@@ -19,6 +19,10 @@ npm install react-bootstrap bootstrap
 ```
 ```
 # Import in index.js file
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+# or Directly paste CDN CSS and JS LINKS in HTML body ` public/index.html `
+
 ```
 
