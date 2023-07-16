@@ -5,9 +5,9 @@ import '../App.css'            // Importing CSS file `.. ` two dot means one bac
 
 function Home(){
     return(
-
-        <h1> This data from Home Page </h1>
-
+          <div className="container">
+             <h1> This data from Home Page </h1>
+          </div>
     )
 }
 
