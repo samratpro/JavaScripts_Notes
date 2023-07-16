@@ -13,4 +13,12 @@ npm start
 cd appname
 npm i react-router-dom
 ```
+### React Bootstrap
+```
+npm install react-bootstrap bootstrap
+```
+```
+# Import in index.js file
+import 'bootstrap/dist/css/bootstrap.min.css';
+```
 
