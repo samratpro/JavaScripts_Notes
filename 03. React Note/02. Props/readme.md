@@ -1,5 +1,5 @@
 
-## Simple Props
+## 01. Simple Props
 ```js
 // Send props
 // App.jsx
@@ -31,7 +31,7 @@ export default function AnotherFun({name}){      // props argument by defaut a o
         )}
 ```
 
-## Pass Object as Props
+## 02. Pass Object as Props
 ```js
 // Send props
 // App.jsx
