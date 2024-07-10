@@ -20,7 +20,7 @@ export default function HandleClick(){
     alert(`your name is : ${name}`);
 }
 ```
-## Even Handle with Arguments
+## 02. Even Handle with Arguments
 ```js
 // App.jsx
 import './App.css'
