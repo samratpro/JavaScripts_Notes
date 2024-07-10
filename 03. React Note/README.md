@@ -1,12 +1,18 @@
 # React-Component
-### Create react app
-```
+- Ensure Nodejs Enviroment 
+### Traditional way Create react app
+```sh
 npx create-react-app appname
-```
-### Start React app
-```
 cd appname
 npm start
+```
+### Start React app with Vite
+```sh
+npm create vite@latest my-project -- --template react
+pnpm create vite my-project --template react
+cd my-project
+npm install
+npm run dev
 ```
 ### Import React Router
 ```
