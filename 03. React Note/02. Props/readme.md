@@ -25,7 +25,7 @@ export default function AnotherFun(Props){         // Props is just an object ar
 ```js
 // Recive Props with destructure
 // another.jsx
-export default function AnotherFun({name}){         // Props is just an object argument
+export default function AnotherFun({name}){   
     return(
           <h2> Hello from  File and {name} Props </h2>
         )}
