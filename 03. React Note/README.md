@@ -1,13 +1,13 @@
 # React-Component
 - Ensure Nodejs Enviroment 
 ### Traditional way Create react app
-```sh
+```bash
 npx create-react-app appname
 cd appname
 npm start
 ```
 ### Start React app with Vite
-```sh
+```bash
 npm create vite@latest my-project -- --template react
 pnpm create vite my-project --template react
 cd my-project
@@ -15,12 +15,12 @@ npm install
 npm run dev
 ```
 ### Import React Router
-```
+```bash
 cd appname
 npm i react-router-dom
 ```
 ### React Bootstrap
-```
+```bash
 npm install react-bootstrap bootstrap
 ```
 ```
