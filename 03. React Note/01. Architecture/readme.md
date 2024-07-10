@@ -7,7 +7,7 @@ src-|
     |- index.css
     |- main.jsx
 ```
-## 
+## 02. Code Fundamental
 ```js
 import './App.css';                                   // Add CSS file with App
 import Home from './pages/home'                       // Import external file's component     
