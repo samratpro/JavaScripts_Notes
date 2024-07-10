@@ -7,8 +7,22 @@ src-|
     |- index.css
     |- main.jsx
 ```
-
-## 02. Export Import
+## 
+```js
+import './App.css';                                   // Add CSS file with App
+import Home from './pages/home'                       // Import external file's component     
+function App() {
+  return (
+    <div className="App">                             // Everyrhing should be under ` App ` class
+        <h1 id="simple">Hello React</h1>              // id is id but class is className
+         <Home/>                                      // Placing Home function component
+         <Home></Home>                                // Another way Placing Home function component
+    </div>
+  );
+}
+export default App;                                   // export default ` function name `
+```
+## 03. Export Import
 ### Import file
 ```js
 // App.jsx
