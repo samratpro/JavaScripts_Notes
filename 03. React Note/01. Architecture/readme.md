@@ -13,6 +13,7 @@ import './App.css';                                   // Add CSS file with App
 import Home from './pages/home'                       // Import external file's component     
 function App() {
   return (
+    <></>  // blank wrapper can be used to wrapping mutiple html component
     <div className="App">                             // Everyrhing should be under ` App ` class
         <h1 id="simple">Hello React</h1>              // id is id but class is className
          <Home/>                                      // Placing Home function component
