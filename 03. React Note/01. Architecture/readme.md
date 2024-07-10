@@ -1,4 +1,12 @@
-
+## Architecture
+```
+src-|
+    |- App.css
+    |- App.jsx
+    |- anotherFile.js
+    |- index.css
+    |- main.jsx
+```
 
 ## Export Import
 ### Import file
