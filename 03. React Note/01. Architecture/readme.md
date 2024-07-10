@@ -1,4 +1,4 @@
-## Architecture
+## 01. Architecture
 ```
 src-|
     |- App.css
@@ -8,7 +8,7 @@ src-|
     |- main.jsx
 ```
 
-## Export Import
+## 02. Export Import
 ### Import file
 ```js
 // App.jsx
