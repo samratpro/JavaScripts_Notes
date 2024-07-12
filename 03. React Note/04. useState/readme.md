@@ -7,7 +7,7 @@ export default function App() {
 const[count, setCount] = useState(0) 
 // useState is a abstraction function that return a array 
 // first index of array is invoked value and second index is a function 
-// function can change invoked value
+// function can change invoked value (value can be any data type, str, number, array, object etc)
 // Here with a destraction count is define to recive value and setCount is for function
 
 function handleClick(){
