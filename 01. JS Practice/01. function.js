@@ -22,7 +22,7 @@ let arrowFun2 = (arg1, arg2) => {
 
 let numbers = [2,3,4,5,6,7,8];
 
-// ` forEach ` can't directly store data in new array, 
+// ` forEach ` can't directly store data in new array, and it can't return anything
 //   for each is a for loop for array iterate, it is a self method of array
 let forEachNumber = []
 numbers.forEach(funn = (value, index, item) => {
