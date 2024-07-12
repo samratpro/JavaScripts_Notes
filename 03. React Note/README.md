@@ -14,7 +14,7 @@ cd my-project
 npm install
 npm run dev
 ```
-### StrictMode Can API call dual time
+### StrictMode Can API call dual time, need to disable it
 ```js
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>
