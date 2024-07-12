@@ -14,6 +14,14 @@ cd my-project
 npm install
 npm run dev
 ```
+### StrictMode Can API call dual time
+```js
+ReactDOM.createRoot(document.getElementById('root')).render(
+  // <React.StrictMode>
+    <App />
+  // </React.StrictMode>,
+)
+```
 ### Import React Router
 ```bash
 cd appname
