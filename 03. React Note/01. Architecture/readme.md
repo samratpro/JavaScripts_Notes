@@ -1,4 +1,7 @@
 ## 01. Architecture
+- React compailer continuously runs DOM and React DOM Code, if see any change it update instantly, like Desktop application 
+- For this asynchronous behaviour we can't directly handle data update, or data fetching without using react dependency
+- Example: If we fetch data without using react useEffect hook/method react compailer continuously fetch data from API
 ```
 src-|
     |- App.css
