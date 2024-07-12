@@ -4,7 +4,7 @@ import './App.css'
 import { useState } from 'react'
 export default function App() {
 
-const[count, setCount] = useState(0) 
+const[count, setCount] = useState(0) // Zero is ensuring here, it will take number argument, for array [], for str '', for object {}
 // useState is a abstraction function that return a array 
 // first index of array is invoked value and second index is a function 
 // function can change invoked value (value can be any data type, str, number, array, object etc)
