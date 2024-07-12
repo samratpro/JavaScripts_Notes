@@ -12,7 +12,8 @@ src-|
 import './App.css';                                   // Add CSS file with App
 import Home from './pages/home'                        // Import external file's component     
 function App() {
- const style = {border:'1px solid purple',borderRadius:'10px',padding:'5px'}   // internall CSS uses as object, and instead hype '-' uses camelCase
+ const style = {border:'1px solid purple',borderRadius:'10px',padding:'5px'}
+ // internall CSS uses as object, and instead hype '-' uses camelCase
   return (
     <></>  // blank wrapper can be used to wrapping mutiple html component
     <div className="App">                                      // Everyrhing should be under ` App ` class
