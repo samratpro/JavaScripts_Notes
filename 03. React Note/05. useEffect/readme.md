@@ -16,7 +16,7 @@ useEffect(()=>{
   return (
     <>
       <h1> Users Data Fetch </h1>
-      {userData.map(data=><Users data={data}></Users>)}  
+      {userData.map(data=><Users key={data.id} data={data}></Users>)}  {/* must be pass a key=value otherwise console return error */}
       {/* map is traversing userData array creating Users component, with passing Props */}
     </>
   )
