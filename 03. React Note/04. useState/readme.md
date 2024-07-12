@@ -5,8 +5,8 @@ import { useState } from 'react'
 export default function App() {
 
 const[count, setCount] = useState(0) // Zero is ensuring here,
-                                     // it will take only number argument,
-                                     // example: for array Array/[], for str str/'', for object Object/{}
+                                  // it will take only number argument,
+                               // example: for number Number/0, for array Array/[], for str str/'', for object Object/{}
 
 // useState is a abstraction function that return a array 
 // first index of array is invoked value and second index is a function 
