@@ -47,11 +47,11 @@ function Countries({country}){
   
   return(
     <>
-      <div className='country-box'>
+      <div className='country-box' style={{color: isVisit?'red':'white'}}>
         <p>Name : {name.common}</p>
         <p>Population : {population}</p>
         <img style={{width:'100px'}} src={flags.png} alt="" />
-        <p>{isVisit && 'Going'}</p>
+        {isVisit && <button >Mark Visited</button>}
         <button onClick={handleVisit}>Visit</button> {isVisit ? ' Visited':' Want to go'}
       </div>
     </>
