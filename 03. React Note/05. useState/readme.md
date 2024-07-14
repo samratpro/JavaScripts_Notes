@@ -35,3 +35,26 @@ function handleReduece(){
   )
 }
 ```
+## 02. useState with clickHandler with ternary operator
+```js
+function Countries({country}){
+  const{name,flags,population}=country
+
+  const[isVisit, setVisit] = useState(false)
+  const handleVisit = () =>{
+    setVisit(!isVisit)
+  }
+  
+  return(
+    <>
+      <div className='country-box'>
+        <p>Name : {name.common}</p>
+        <p>Population : {population}</p>
+        <img style={{width:'100px'}} src={flags.png} alt="" />
+        <p>{isVisit && 'Going'}</p>
+        <button onClick={handleVisit}>Visit</button> {isVisit ? ' Visited':' Want to go'}
+      </div>
+    </>
+  )
+}
+```
