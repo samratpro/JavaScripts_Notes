@@ -5,6 +5,7 @@ import { useState } from 'react'
 export default function App() {
 
 const[count, setCount] = useState(0) // Zero is ensuring here,
+                                    // usState must be in function
                                   // it will take only number argument,
                                // example: for number Number/0, for array Array/[], for str str/'', for object Object/{}
 
