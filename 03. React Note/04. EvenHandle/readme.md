@@ -41,3 +41,39 @@ export default function HandleClick(arg){
     alert(`your name is : ${name} ${arg}`);
 }
 ```
+## 03. Handle Even from Passed argument as a function
+```js
+// App.jsx
+export default function App() {
+  const handleVisitedCountry = (country) =>{
+        let findCountry = visitedCountry.includes(country) // check exist or dosen't exist
+        findCountry || setVisited([...visitedCountry, country]) // push visited  country in reactive way
+  }
+return (
+    <>
+      {countryList.map(country=> <Countries handleVisitedCountry={handleVisitedCountry} country={country}> </Countries>)}
+    </>
+  )
+}
+// Country.jsx
+function Countries({country, handleVisitedCountry}){
+  const{name,flags,population}=country
+  const[isVisit, setVisit] = useState(false)
+  const[visitText, setVistText] = useState('Not Visited')
+
+  const handleVisit = () =>{
+    setVisit(!isVisit)
+    !isVisit ? setVistText('Visited') : setVistText('Not Visited')
+    handleVisitedCountry(name.common)
+  }
+  
+  return(
+    <>
+      <div className='country-box' style={{color: isVisit?'red':'white'}}>
+        {/* <button onClick={()=>handleVisitedCountry(name.common)}>Mark Visited</button> */}
+        <button onClick={handleVisit}>{visitText}</button> {isVisit ? ' Visited':' Want to go'}
+      </div>
+    </>
+  )
+}
+```
