@@ -1,3 +1,9 @@
+## 00. Rules about even handling in large project
+```
+- When a even work for multiple section then even will declear in root level of all section
+- If an even triggered in child but executes or change in root then even declear in root, child consume as a props passing
+- In general we can declear even as a component or utilities file and use it after importing
+```
 
 ## 01. Even Handle without Arguments
 ```js
