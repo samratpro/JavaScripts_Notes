@@ -1,6 +1,15 @@
+## 00. useEffect Rules
+```
+- useEffect is a way of handling event in React Component, that takes two argument
+- first argument is synchronous call back task, second argument is when task will happen
+- second argument is an array [] cause it can tiggered with many state's or non state's data
+- if second argument is empty then inputed task will happen once
+- useEffect uses cause react always monitor virtual DOM, at this time task without useEffect will execute infinity times
+
+```
+
 ## 01. Simple Data fetch by useEffect
 ```js
-import './App.css'
 import { useState, useEffect } from 'react'
 
 export default function App() {
@@ -32,4 +41,36 @@ function Users({data}){
     </>
   )
 }
+```
+## useEffect with dependency
+```js
+export default function(){
+    const[watchs, setWatchs] = useState([])
+    const[CartInState, setCartInState] = useState([])
+
+    // Load products from watches.json that existed in public folder
+    useEffect(()=>{
+        fetch('watches.json')
+        .then(res=>res.json())
+        .then(data=>setWatchs(data))
+        },[])
+
+    // Load cart id's from LocalDB and Update in state label
+    // This effect happen when refresh tab or reopen browser again
+    useEffect(()=>{
+        // wait until load main data
+        if(watchs.length){
+            const getStoredCart = getLocalCart()  // get Cart from Local DB
+            // Loop will match with id and return product list
+            const savedCart = []
+            for(const id of getStoredCart){
+                const watch = watchs.find(watch=>watch.id == id)
+                if(watch){
+                savedCart.push(watch)
+                }
+            }
+            setCartInState(savedCart)  // Update loaded localdb cart in state 
+
+        }
+    },[watchs])  // This effect is tiggered with watchs, means executive again when any change in watchs
 ```
