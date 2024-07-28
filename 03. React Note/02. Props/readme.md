@@ -1,4 +1,11 @@
+## 00. Rules about props passing
+```
+- For list elements must be pass a key={value}, each value should be unique
+- As a props we can pass a variable, array, object, or a function
+- props will go by default as a Object
+- props can be recive general function (props) or with Object destructing ({arg1, arg2})
 
+```
 ## 01. Simple Props
 ```js
 // Send props
@@ -26,6 +33,7 @@ export default function AnotherFun(Props){         // Props is just an object ar
 // Recive Props with destructure
 // another.jsx
 export default function AnotherFun({name}){      // props argument by defaut a object type so need to destructure
+// or const {name} = Props;
     return(
           <h2> Hello from  File and {name} Props </h2>
         )}
@@ -35,7 +43,6 @@ export default function AnotherFun({name}){      // props argument by defaut a o
 ```js
 // Send props
 // App.jsx
-import './App.css'
 import AnotherFun from './another'
 export default function App() {
   return (
@@ -50,6 +57,7 @@ export default function App() {
 // Recive Props with destructure
 // another.jsx
 function AnotherFun({data}){
+  // or const {name, age} = data;
     return(
         <>
           <h2> Name : {data.name} </h2>
@@ -59,5 +67,26 @@ function AnotherFun({data}){
 }
 export default AnotherFun;
 ```
-
+## 03. Pass props as a function
+```js
+// App.jsx
+export default function App() {
+  const handleVisitedCountry = (country) =>{
+            ....
+  }
+return (
+    <>
+      <Countries handleVisitedCountry={handleVisitedCountry} > </Countries>
+    </>
+  )
+}
+// Country.jsx
+function Countries({country, handleVisitedCountry}){
+  return(
+    <>
+        <button onClick={()=>handleVisitedCountry(arg)}>Mark Visited</button>
+    </>
+  )
+}
+```
 
