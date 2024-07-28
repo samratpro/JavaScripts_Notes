@@ -1,12 +1,12 @@
-# React-Component
+# Start React
 - Ensure Nodejs Enviroment 
-### Traditional way Create react app
+## Create react app standered way
 ```bash
 npx create-react-app appname
 cd appname
 npm start
 ```
-### Start React app with Vite
+## Create React app with Vite
 ```bash
 npm create vite@latest my-project -- --template react
 pnpm create vite my-project --template react
@@ -14,21 +14,33 @@ cd my-project
 npm install
 npm run dev
 ```
-### StrictMode Can API call dual time, need to disable it
+
+## React tailwindcss
+```
+https://tailwindcss.com/docs/guides/vite#react
+```
+```bash
+cd project_folder
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
 ```js
-ReactDOM.createRoot(document.getElementById('root')).render(
-  // <React.StrictMode>
-    <App />
-  // </React.StrictMode>,
-)
+// tailwind.config.js
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
 ```
-### Import React Router
+## React Bootstrap
 ```bash
-cd appname
-npm i react-router-dom
-```
-### React Bootstrap
-```bash
+cd project_folder
 npm install react-bootstrap bootstrap
 ```
 ```
@@ -38,5 +50,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 # or Directly paste CDN CSS and JS LINKS in HTML body ` public/index.html `
 
+```
+## StrictMode Can API call dual time, need to disable it
+```js
+ReactDOM.createRoot(document.getElementById('root')).render(
+  // <React.StrictMode>
+    <App />
+  // </React.StrictMode>,
+)
 ```
 
