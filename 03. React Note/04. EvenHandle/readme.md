@@ -1,4 +1,4 @@
-## 00. Rules about even handling in large project
+## 00. Rules even handling
 ```
 - When a even work for multiple section then even will declear in root level of all section
 - If an even triggered in child but executes or change in root then even declear in root, child consume as a props passing
