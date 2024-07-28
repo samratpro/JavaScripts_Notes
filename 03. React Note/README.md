@@ -39,7 +39,7 @@ export default {
 }
 ```
 ```css
-/* App.css */
+/* index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
