@@ -1,3 +1,10 @@
+## 00. State Rules
+```
+- Multiple state can be declear in a section function ' const[data, setData] = useState(datatype) '
+- setData is a function that invoked argument modify data
+- useState can invoke Number(0), Array[], string '', Object{} type data
+```
+
 ## 01. Simple Count App Using React useState
 ```js
 import './App.css'
@@ -9,7 +16,7 @@ const[count, setCount] = useState(0) // Zero is ensuring here,
                                   // it will take only number argument,
                                // example: for number Number/0, for array Array/[], for str str/'', for object Object/{}
 
-// useState is a abstraction function that return a array 
+// useState is a abstraction function that return a array with two attribute
 // first index of array is invoked value and second index is a function 
 // function can change invoked value (value can be any data type, str, number, array, object etc)
 // Here with a destraction count is define to recive value and setCount is for function
