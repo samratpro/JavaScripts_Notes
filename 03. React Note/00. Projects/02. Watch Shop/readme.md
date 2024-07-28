@@ -1,18 +1,22 @@
 ## Watch Shop
 ## Features
 ```
-- fetch all watches data from watches.json file, 
-- Rendering all country data as grid layout
-- Conditional Rendering visited or not visited country with ternary operator
-- handleVisit even for visited or not visited country
+- fetch all watches data from watches.json file
+- Add to cart
+- Show cart's product from local browser's database
+- Delete from cart and instant update
 ```
 ## Dependecy
 ```
 - useState
-- useEffect
+- useEffect with tigger
 - props passing
-- handleVisit
-- handleVisitedCountry
+- localdb
+- handleAddCart
+- handleCartDelete
+- saveIdInLocal
+- getLocalCart
+- deleteInLocal
 
 ```
 ## public/watches.json
