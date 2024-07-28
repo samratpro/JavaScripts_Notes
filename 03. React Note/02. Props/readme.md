@@ -89,4 +89,67 @@ function Countries({country, handleVisitedCountry}){
   )
 }
 ```
+## 04. Props Drilling Simple Way
+```js
+// Props drilling is a term to handle props from multi root to child level
+// Root - Level
+// App.jsx
+export default function App() {
+return (
+    <>
+      <Countries name={'BD'} population={'100K'} > </Countries>
+    </>
+  )
+}
+
+// Child of Root - Level
+export default function Countries({name, population}) {
+return (
+    <>
+      <Countries name={name} population={population} > </Countries>
+    </>
+  )
+}
+
+// Child - Level
+export default function Country({name, population}) {
+return (
+    <>
+      <Country name={name} population={population} > </Country>
+    </>
+  )
+}
+```
+## 05. Props Drilling Standered Way
+```js
+// Props drilling is a term to handle props from multi root to child level
+// Root - Level
+// App.jsx
+export default function App() {
+return (
+    <>
+      <Countries name={'BD'} population={'100K'} > </Countries>
+    </>
+  )
+}
+
+// Child of Root - Level
+export default function Countries(Props) {
+return (
+    <>
+      <Countries {...Props} > </Countries>
+    </>
+  )
+}
+
+// Child - Level
+export default function CountryData({name, population}) {
+return (
+    <>
+      <CountryData name={name} population={population} > </CountryData>
+    </>
+  )
+}
+
+```
 
