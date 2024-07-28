@@ -38,6 +38,12 @@ export default {
   plugins: [],
 }
 ```
+```css
+/* App.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
 ## React Bootstrap
 ```bash
 cd project_folder
