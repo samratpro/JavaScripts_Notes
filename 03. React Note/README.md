@@ -44,6 +44,19 @@ export default {
 @tailwind components;
 @tailwind utilities;
 ```
+## daisyui
+```
+https://daisyui.com/docs/install/
+```
+```bash
+npm i -D daisyui@latest
+```
+```js
+//tailwind.config.js
+plugins: [
+    require('daisyui'),
+  ],
+```
 ## React Bootstrap
 ```bash
 cd project_folder
