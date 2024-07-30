@@ -5,6 +5,9 @@
 ### Special Note
 ```
 All react component function name must be start with capital letter
+App()
+Nav()
+etc
 ```
 ```
 src-|
