@@ -1,12 +1,18 @@
 # Start React
 - Ensure Nodejs Enviroment 
 ## 01. Create react app standered way
+```
+https://react.dev/learn/start-a-new-react-project
+```
 ```bash
 npx create-react-app appname
 cd appname
 npm start
 ```
 ## 02. Create React app with Vite
+```
+https://vitejs.dev/guide/
+```
 ```bash
 npm create vite@latest my-project -- --template react
 pnpm create vite my-project --template react
