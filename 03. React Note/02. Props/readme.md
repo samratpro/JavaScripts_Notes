@@ -6,7 +6,7 @@
 - props can be recive general function (props) or with Object destructing ({arg1, arg2})
 - PropTypes used to debuge or define data type
 ```
-## Props Types Validation
+## 01. Props Types Validation
 ```bash
 npm install prop-types
 ```
