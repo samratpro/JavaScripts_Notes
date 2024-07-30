@@ -5,9 +5,38 @@
 - props will go by default as a Object
 - props can be recive general function (props) or with Object destructing ({arg1, arg2})
 - PropTypes used to debuge or define data type
+```
+## Props Types Validation
+```bash
+npm install prop-types
+```
+### In jsx file
+```js
+// example App.jsx
+function App({ title, age, isActive }) {
+  return (
+    <div>
+      <h1>{title}</h1>
+      <p>Age: {age}</p>
+      <p>Status: {isActive ? 'Active' : 'Inactive'}</p>
+    </div>
+  );
+}
+
+App.propTypes = {
+  title: PropTypes.string.isRequired, // String and required
+  age: PropTypes.number, // Number and optional
+  isActive: PropTypes.bool, // Boolean and optional
+};
+
+// We can pass default props, if 
+MyComponent.defaultProps = {
+  age: 18,
+  isActive: false,
+};
 
 ```
-## 01. Simple Props
+## 02. Simple Props
 ```js
 // Send props
 // App.jsx
@@ -40,7 +69,7 @@ export default function AnotherFun({name}){      // props argument by defaut a o
         )}
 ```
 
-## 02. Pass Object as Props
+## 03. Pass Object as Props
 ```js
 // Send props
 // App.jsx
@@ -68,7 +97,7 @@ function AnotherFun({data}){
 }
 export default AnotherFun;
 ```
-## 03. Pass props as a function
+## 04. Pass props as a function
 ```js
 // App.jsx
 export default function App() {
@@ -90,7 +119,7 @@ function Countries({country, handleVisitedCountry}){
   )
 }
 ```
-## 04. Props Drilling Simple Way
+## 05. Props Drilling Simple Way
 ```js
 // Props drilling is a term to handle props from multi root to child level
 // Root - Level
@@ -121,7 +150,7 @@ return (
   )
 }
 ```
-## 05. Props Drilling Standered Way
+## 06. Props Drilling Standered Way
 ```js
 // Props drilling is a term to handle props from multi root to child level
 // Root - Level
