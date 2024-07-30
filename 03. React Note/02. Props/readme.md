@@ -4,6 +4,7 @@
 - As a props we can pass a variable, array, object, or a function
 - props will go by default as a Object
 - props can be recive general function (props) or with Object destructing ({arg1, arg2})
+- PropTypes used to debuge or define data type
 
 ```
 ## 01. Simple Props
