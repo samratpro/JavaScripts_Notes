@@ -53,14 +53,15 @@ function Users({condition, data}){
 ## 07. Conditional CSS Rendering
 ```js
 // 01. Example 1
+// [ open == true, and open ] [open == false, and !open] is same here
 export default function Navbar(){
     const[open, setOpen] = useState(true);
     return(
         <>
         <nav>
             <div onClick={()=>{setOpen(!open)}}>
-                <AiOutlineClose className={`text-2xl ${open==true ? '':'hidden'}`}></AiOutlineClose >
-                <HiMenu className={`text-2xl ${open==false ? '':'hidden'}`}> </HiMenu> 
+                <AiOutlineClose className={`text-2xl ${open ? '':'hidden'}`}></AiOutlineClose >
+                <HiMenu className={`text-2xl ${!open ? '':'hidden'}`}> </HiMenu> 
             </div>
         </nav>
         </>
