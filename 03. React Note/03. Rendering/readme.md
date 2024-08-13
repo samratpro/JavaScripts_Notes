@@ -50,6 +50,43 @@ function Users({condition, data}){
   )
 }
 ```
+## 07. Conditional CSS Rendering
+```js
+// 01. Example 1
+export default function Navbar(){
+    const[open, setOpen] = useState(true);
+    return(
+        <>
+        <nav>
+            <div onClick={()=>{setOpen(!open)}}>
+                <AiOutlineClose className={`text-2xl ${open==true ? '':'hidden'}`}></AiOutlineClose >
+                <HiMenu className={`text-2xl ${open==false ? '':'hidden'}`}> </HiMenu> 
+            </div>
+        </nav>
+        </>
+    )
+}
+
+// 02. Example 2
+function Countries({country}){
+  const[isVisit, setVisit] = useState(false)
+
+  const handleVisit = () =>{
+    setVisit(!isVisit)
+    !isVisit ? setVistText('Visited') : setVistText('Not Visited')
+  }
+
+  return(
+    <>
+      <div className='country-box' style={{color: isVisit?'red':'white'}}>
+        <p>Name : {name.common}</p>
+        <button onClick={handleVisit}>{visitText}</button> {isVisit ? ' Visited':' Want to go'}
+      </div>
+    </>
+  )
+}
+
+```
 
 
 
