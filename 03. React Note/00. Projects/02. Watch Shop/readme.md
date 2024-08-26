@@ -1,13 +1,11 @@
 ## Watch Shop
 ## Features
-```
 - fetch all watches data from watches.json file
 - Add to cart
 - Show cart's product from local browser's database
 - Delete from cart and instant update
-```
+  
 ## Dependecy
-```
 - useState
 - useEffect with tigger
 - props passing
@@ -17,8 +15,7 @@
 - saveIdInLocal
 - getLocalCart
 - deleteInLocal
-
-```
+  
 ## public/watches.json
 ```json
 [
