@@ -1,20 +1,20 @@
 # REST Country
 ## Features
-```
+
 - fetch all country data from ` https://restcountries.com/v3.1/all `
 - Rendering all country data as grid layout
 - Conditional Rendering visited or not visited country with ternary operator
 - handleVisit even for visited or not visited country
-```
+
 ## Dependecy
-```
+
 - useState
 - useEffect
 - props passing
 - handleVisit
 - handleVisitedCountry
 
-```
+
 ## App.jsx
 ```js
 import './App.css'
