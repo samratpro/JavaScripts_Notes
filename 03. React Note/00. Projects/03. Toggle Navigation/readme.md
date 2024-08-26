@@ -1,11 +1,8 @@
 ## Toggle Navigation
 ## Features
-```
 - Simple Navbar that will hide and show toggle when device is Mobile version
 - When menu opens icon become cross icon from Menu icon
-```
 ## Dependecy
-```
 - useState
 - useEffect
 - Click event
