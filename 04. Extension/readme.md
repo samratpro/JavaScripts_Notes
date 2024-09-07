@@ -1,11 +1,11 @@
 ## Architecture
 ```
-📁 html
+🔽 html
   📄 popup.html
   📄 style.css
-📁 icons
+🔽 icons
   📄 icon.png
-📁 scripts
+🔽 scripts
   📄 background.js
   📄 content.js
   📄 popup.js
