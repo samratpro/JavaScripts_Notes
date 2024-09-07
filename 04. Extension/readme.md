@@ -1,4 +1,16 @@
 ## Architecture
+```
+📁 html
+  📄 popup.html
+  📄 style.css
+📁 icons
+  📄 icon.png
+📁 scripts
+  📄 background.js
+  📄 content.js
+  📄 popup.js
+📄 manifest.json
+```
 
 ### manifest.json
 ```json
@@ -30,5 +42,9 @@
         "48": "icons/icon.png"
     }
 }
+
+```
+### html/popup.html
+```
 
 ```
