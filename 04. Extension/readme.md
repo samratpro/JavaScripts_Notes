@@ -27,7 +27,12 @@
 </body>
 </html>
 ```
-
+### scripts
+```
+📄 background.js // Manipulating webpage content, injecting UI elements
+📄 content.js    // Event handling, managing state, performing background tasks
+📄 popup.js      // Handling UI interactions, fetching data from storage
+```
 ### manifest.json
 ```json
 {
@@ -58,9 +63,5 @@
         "48": "icons/icon.png"
     }
 }
-
-```
-### html/popup.html
-```
 
 ```
