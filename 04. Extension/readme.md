@@ -50,12 +50,6 @@
     "action": {
         "default_popup": "./html/popup.html"
     },
-
-    // Using sidepanel instead of popup
-    // "side_panel": {
-    // "default_path": "./html/sidepanel.html"
-    // },
-    
     "background": {
         "service_worker": "./scripts/background.js"
     },
