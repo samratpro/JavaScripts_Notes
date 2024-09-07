@@ -45,7 +45,8 @@
         "identity",
         "activeTab",
         "scripting",
-        "tabs"
+        "tabs",
+        "windows"
     ],
     "action": {
         "default_popup": "./html/popup.html"
