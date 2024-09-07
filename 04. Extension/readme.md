@@ -3,28 +3,32 @@
 ### manifest.json
 ```json
 {
-  "manifest_version": 3,
-  "name": "Title Scraper",
-  "version": "1.0",
-  "description": "A simple extension to scrape the current page's title.",
-  "permissions": [
-    "activeTab",
-    "scripting",
-    "storage",
-    "geolocation"
-  ],
-  "action": {
-    "default_popup": "./popup.html",
-    "default_icon": {
-      "16": "icons/icon16.png",
-      "48": "icons/icon48.png",
-      "128": "icons/icon128.png"
+    "manifest_version": 3,
+    "name": "API Auth Extension",
+    "version": "1.0",
+    "description": "An extension to authenticate and fetch data from API.",
+    "permissions": [
+        "storage",
+        "identity",
+        "activeTab",
+        "scripting",
+        "tabs"
+    ],
+    "action": {
+        "default_popup": "./html/popup.html"
+    },
+    
+    "background": {
+        "service_worker": "./scripts/background.js"
+    },
+    "content_scripts":[{
+           "matches" : ["<all_urls>"],
+           "js":["./scripts/content.js"]
+        }
+      ],
+    "icons": {
+        "48": "icons/icon.png"
     }
-  },
-  "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
-  }
 }
+
 ```
