@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="./scripts/popup.js"></script>
+    <script src="../scripts/popup.js"></script>
 </body>
 </html>
 ```
