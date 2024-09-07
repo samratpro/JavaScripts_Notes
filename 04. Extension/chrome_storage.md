@@ -1,7 +1,7 @@
 ## chrome_storage
 
 
-### chrome.storage.local
+### 01. chrome.storage.local
 ```
 when you need more space and the data doesn't need to sync across devices.
 max capacity ~5 MB
@@ -15,7 +15,7 @@ chrome.storage.local.get(["key"]).then((result) => {
   console.log("Value is " + result.key);  // or Update any data
 });
 ```
-### chrome.storage.sync
+### 02. chrome.storage.sync
 ```
 sync across all devices.
 max 100 KB
@@ -29,7 +29,7 @@ chrome.storage.sync.get(["key"]).then((result) => {
   console.log("Value is " + result.key);    // or Update any data
 });
 ```
-### chrome.storage.session
+### 03. chrome.storage.session
 ```
 Temporary (Session-based), browser or extension is closed
 ```
