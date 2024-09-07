@@ -70,5 +70,47 @@ document.getElementById('openWindow').addEventListener('click', function() {
     console.log("Popup window created with ID:", window.id);
   });
 });
-
+```
+```js
+// Updates the properties of a specified window,
+chrome.windows.update(windowId, { state: "maximized" }, function(updatedWindow) {
+  console.log("Window updated", updatedWindow);
+});
+```
+```js
+// list of all currently open Chrome windows
+chrome.windows.getAll({ populate: true }, function(windows) {
+  console.log("All open windows:", windows);
+});
+```
+```js
+// details about a specific window using its ID.
+chrome.windows.get(windowId, { populate: true }, function(window) {
+  console.log("Window details:", window);
+});
+```
+```js
+chrome.windows.getCurrent({}, function(window) {
+  console.log("Current window:", window);
+});
+```
+```js
+chrome.windows.getLastFocused({}, function(window) {
+  console.log("Last focused window:", window);
+});
+```
+```js
+chrome.windows.remove(windowId, function() {
+  console.log("Window removed");
+});
+```
+```js
+chrome.windows.onCreated.addListener(function(window) {
+  console.log("New window created:", window);
+});
+```
+```js
+chrome.windows.onRemoved.addListener(function(windowId) {
+  console.log("Window removed with ID:", windowId);
+});
 ```
