@@ -29,8 +29,8 @@
 ```
 ### scripts
 ```
-📄 background.js // Manipulating webpage content, injecting UI elements
-📄 content.js    // Event handling, managing state, performing background tasks
+📄 background.js // Event handling, managing state, performing background tasks
+📄 content.js    // Manipulating webpage content, injecting UI elements
 📄 popup.js      // Handling UI interactions, fetching data from storage
 ```
 ### manifest.json
@@ -65,3 +65,4 @@
 }
 
 ```
+
