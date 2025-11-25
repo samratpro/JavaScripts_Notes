@@ -40,11 +40,17 @@ let isActive = true; // inferred as boolean
 
 ---
 
-## 02. Type Alias
+## 02. Type Alias - Custom Type
 
 Type aliases create a named reference for a type. Useful for reusable types.
 
 ```typescript
+type AllowField = 'name' | 'phone' | 'languages' | 'website';  // where only allows a specific string
+type Mixed = 'left' | 'right' | 1 | 2 | 3;    // 1. Mix string + number → 100% allowed
+type PageSize = 10 | 20 | 50 | 100;  // 2. Only specific numbers
+type ID = string | number;   // union of any string and any number support
+
+// Object Type
 type Student = {
   name: string;
   dept: string;
