@@ -16,25 +16,27 @@ npm i/install package_name # for specific package
 run
 ```bash
 npm run build
-node ./dist/filename.js
+node ./dist/filename.js # or npm run start
 npm run dev // tsx like nextjs
+tsx src/file_name.ts  // direct run ---- best in dev mode
 ```
 
 
 for quick run
 ```bash
-npm run start:all
+npm run start:all # for 1st    --- production
+npm run scrap:all # for 2nd    --- development mode is best
+npm run scrap2:all # for 3rd   --- production
 ```
 ```json
 # after main
 "main": "index.js",
  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:all": "tsx src/pagesjaunes_all.ts"
+     "start:all": "npm run build && npm run start"
+     "scrap:all": "tsx src/file_name.ts",
+     "scrap2:all": "npm run build && node ./dist/filename.js"
   },
-or
-"start:all": "tsx src/pagesjaunes_all.ts && pagesjaunes_data_scrap.ts"
-"start:all": "npm run build && npm run start"
 
 ```
 
