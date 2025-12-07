@@ -28,7 +28,7 @@ npm run scrap:all # for 2nd    --- development mode is best
 npm run scrap2:all # for 3rd   --- production
 ```
 ```json
-# after main
+// after main
 "main": "index.js",
  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
