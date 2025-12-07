@@ -5,6 +5,11 @@ npm init -y
 npm install typescript ts-node tsx @types/node --save-dev
 npx tsc --init
 ```
+if need install 
+```bash
+npm i/install # for all packages base on existing config file
+npm i/install package_name # for specific package
+```
 ```
 - create /src and /dist folder base on tsconfig.json
 ```
@@ -13,6 +18,7 @@ run
 npm run build
 npm run start
 ```
+
 
 for quick run
 ```bash
