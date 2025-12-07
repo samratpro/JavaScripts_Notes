@@ -16,7 +16,8 @@ npm i/install package_name # for specific package
 run
 ```bash
 npm run build
-npm run start
+node ./dist/filename.js
+npm run dev // tsx like nextjs
 ```
 
 
