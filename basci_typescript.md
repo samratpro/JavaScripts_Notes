@@ -10,9 +10,8 @@ if need install
 npm i/install # for all packages base on existing config file
 npm i/install package_name # for specific package
 ```
-```
 - create /src and /dist folder base on tsconfig.json
-```
+
 run
 ```bash
 npm run build
