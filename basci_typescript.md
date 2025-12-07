@@ -1,4 +1,35 @@
 # TypeScript Fundamentals - Complete Guide
+## 00. Setup
+```bash
+npm init -y
+npm install typescript ts-node tsx @types/node --save-dev
+npx tsc --init
+```
+```
+- create /src and /dist folder base on tsconfig.json
+```
+run
+```bash
+npm run build
+npm run start
+```
+
+for quick run
+```bash
+npm run start:all
+```
+```json
+# after main
+"main": "index.js",
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:all": "tsx src/pagesjaunes_all.ts"
+  },
+or
+"start:all": "tsx src/pagesjaunes_all.ts && pagesjaunes_data_scrap.ts"
+"start:all": "npm run build && npm run start"
+
+```
 
 ## 01. Variables & Basic Types
 
