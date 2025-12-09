@@ -34,7 +34,7 @@ npm run scrap2:all # for 3rd   --- production
     "test": "echo \"Error: no test specified\" && exit 1",
      "start:all": "npm run build && npm run start"
      "scrap:all": "tsx src/file_name.ts",
-     "scrap2:all": "npm run build && node ./dist/filename.js"
+     "scrap2": "npm run build && node ./dist/filename.js"
   },
 
 ```
